@@ -1,5 +1,6 @@
 #include "models/FileModel.hpp"
 #include "gdkmm/pixbuf.h"
+#include "utils/utils.hpp"
 #include <iostream>
 FileModel::FileModel(Glib::RefPtr<Gio::File> file) {
   auto fileInfo = file->query_info();
@@ -21,6 +22,7 @@ std::string FileModel::resize(int height, int width) {
 }
 std::string FileModel::blackAndWhite() {
   std::string destinationPath = "";
+  Utils::blackAndWhite(destinationPath);
   return destinationPath;
 }
 std::string FileModel::invert() {
