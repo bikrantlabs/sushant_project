@@ -4,6 +4,8 @@
 #include "gtkmm/button.h"
 #include "gtkmm/filedialog.h"
 #include "gtkmm/grid.h"
+#include "gtkmm/image.h"
+#include "gtkmm/label.h"
 #include <string>
 
 class UploadView : public Gtk::Box {
@@ -21,4 +23,6 @@ private:
   Gtk::Grid emptyWrapperBox;
   Gtk::Window &parentWindow;
   Gtk::Button browseFilesButton;
+  Glib::RefPtr<Gtk::Image> lockIcon;
+  Gtk::Label fileLabel;
 };

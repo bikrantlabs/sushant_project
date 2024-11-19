@@ -27,3 +27,31 @@ window {
   padding-left: 132px;
   padding-right: 132px;
 }
+
+
+
+#editorView {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#editorLabel {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#resizeLabel {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#input {
+  color: black;
+}
+
+#separator {
+  background-color: white;
+  background: white;
+  margin-top: 2px;
+}
